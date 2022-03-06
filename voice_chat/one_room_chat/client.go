@@ -160,6 +160,7 @@ func main() {
 	//listen := 0
 
 	fmt.Println("Press ESC to quit")
+	fmt.Printf("Press g to record %d seconds\n", CHUNK_SECONDS)
 	for {
 		char, key, _ := keyboard.GetKey()
 		if char == 'g' && listening == 0 {
